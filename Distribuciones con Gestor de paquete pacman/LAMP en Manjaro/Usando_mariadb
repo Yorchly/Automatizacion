@@ -1,0 +1,15 @@
+**ACCESO A LA BASE DE DATOS**
+$ mysql -u root -> accedes a la base de datos como root
+
+**COMANDOS EN LA BASE DE DATOS**
+MariaDB [(none)]> create database nombre_bd; -> crea base de datos con el nombre especificado
+
+MariaDB [(none)]> grant all on nombre_bd.* to 'usuario' identified by 'password'; -> crea el usuario y le da permisos sobre la base de datos creada.
+
+MariaDB [(none)]> show databases; -> muestra las bases de datos existentes
+
+MariaDB [(none)]> drop database nombre_base_datos; -> borra la base de datos especificada 
+
+Información de importancia (resetear la contraseña del root, por ejemplo) -> https://www.linode.com/docs/databases/mariadb/how-to-install-mariadb-on-centos-7/ 
+
+

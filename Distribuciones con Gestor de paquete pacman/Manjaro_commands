@@ -1,0 +1,16 @@
+**ACTUALIZACIÓN DEL SISTEMA**
+-sudo pacman -Syy -> Actualizar la base de datos.
+-sudo pacman -Syu -> Actualizar el sistema. Este comando tiene incluido el actualizar la base de datos, sería como el equivalente a hacer un sudo apt update && apt upgrade.
+
+**INSTALACIÓN DE PAQUETES**
+-sudo pacman -S [nombre_paquete] -> instala el paquete especificado de los repositorios.
+-sudo pacman -U [ruta_paquet] -> instala el paquete de la ruta local especificada.
+
+**BORRADO DE PAQUETES**
+-sudo pacman -Rns [nombre_paquete] -> borra el paquete, borra las dependencias que se quedarían huérfanas y borra la configuración global.
+
+**BÚSQUEDA DE PAQUETES**
+-sudo pacman -Qi [nombre_paquete] -> muestra información de un paquete instalado.
+-sudo pacman -Ss [nombre_paquete] -> busca en los repositorios el paquete especificado.
+-sudo pacman -Sii [nombre_paquete] -> busca paquete en los repositorios y sus dependencias.
+
