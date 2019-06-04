@@ -15,13 +15,21 @@ if [ "$opcion" = "S" ] || [ "$opcion" = "s" ]; then
 	echo "Instalando Sistema de Control de Version Subversion"
 	sudo pacman -S --noconfirm subversion
 	echo ""
-	echo "Instalando Pycharm community version (Para la profesional hay que ir a su sitio web y descargarse el toolbox del propio JetBrains https://www.jetbrains.com/toolbox/app/ )"
-	sudo pacman -S --noconfirm pycharm-community-edition
-	echo ""
 	echo "Instalando Sublime Text 3"
 	curl -O https://download.sublimetext.com/sublimehq-pub.gpg && sudo pacman-key --add sublimehq-pub.gpg && sudo pacman-key --lsign-key 8A8F901A && rm sublimehq-pub.gpg
 	echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 	sudo pacman -Syu --noconfirm sublime-text
+	echo ""
+	echo "Instalando toolbox de Jetbrains que contiene Pycharm y otros IDEs como IntelliJ (version 1.14.5179)"
+	# Se obtiene el .tar de la pagina web de Jetbrains
+	wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.14.5179.tar.gz
+	# Se descomprime
+	tar -xvf jetbrains-toolbox-1.14.5179.tar.gz
+	# Se borra el .tar
+	rm jetbrains-toolbox-1.14.5179.tar.gz
+	cd jetbrains-toolbox-1.14.5179/
+	# Se ejecuta
+	./jetbrains-toolbox
 	echo ""
 elif [ "$opcion" = "N" ] || [ "$opcion" = "n" ]; then
 	echo "Instalando telegram"
@@ -36,9 +44,6 @@ elif [ "$opcion" = "N" ] || [ "$opcion" = "n" ]; then
 	echo "Instalando Sistema de Control de Version Subversion"
 	sudo pacman -S subversion
 	echo ""
-	echo "Instalando Pycharm community version (Para la profesional hay que ir a su sitio web y descargarse el toolbox del propio JetBrains https://www.jetbrains.com/toolbox/app/ )"
-	sudo pacman -S pycharm-community-edition
-	echo ""
 	echo "¿Desea instalar sublime text 3? S/n"
 	read respuesta_sublime
 	if [ "$respuesta_sublime" = "S" ] || [ "$respuesta_sublime" = "s" ]; then
@@ -46,6 +51,20 @@ elif [ "$opcion" = "N" ] || [ "$opcion" = "n" ]; then
 		echo -e "\n[sublime-text]\nServer = https://download.sublimetext.com/arch/stable/x86_64" | sudo tee -a /etc/pacman.conf
 		sudo pacman -Syu --noconfirm sublime-text
 		echo ""
+	fi	
+	echo ""
+	echo "¿Desea instalar toolbox de Jetbrains que contiene Pycharm y otros IDEs como IntelliJ (version 1.14.5179)? S/n"
+	read respuesta_toolbox
+	if [ "$respuesta_toolbox" = "S" ] || [ "$respuesta_toolbox" = "s" ]; then
+		# Se obtiene el .tar de la pagina web de Jetbrains
+		wget https://download.jetbrains.com/toolbox/jetbrains-toolbox-1.14.5179.tar.gz
+		# Se descomprime
+		tar -xvf jetbrains-toolbox-1.14.5179.tar.gz
+		# Se borra el .tar
+		rm jetbrains-toolbox-1.14.5179.tar.gz
+		cd jetbrains-toolbox-1.14.5179/
+		# Se ejecuta
+		./jetbrains-toolbox
 	fi	
 	echo ""
 else
