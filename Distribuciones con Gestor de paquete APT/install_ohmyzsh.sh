@@ -15,6 +15,13 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
+printf "---------------------------------------------------------------------------\n"
+printf "To fix fonts problems in VS Code: \n"
+printf "1) Open editor\n"
+printf "2) File > Preferences > Settings > search terminal and click in 'Features > Terminal' on the left-side list\n"
+printf "3) Search section 'Terminal › Integrated › Automation Shell: Linux' and click on 'Edit in settings.json'\n"
+printf "4) Add line: 'terminal.integrated.fontFamily': 'Source Code Pro for Powerline' in the json\n"
+printf "---------------------------------------------------------------------------\n"
 printf "You need to restart your computer now, do you wanna proceed? y/N\n"
 read resp
 if [ "$resp" = "y" ] || [ "$resp" = "yes" ]; then
