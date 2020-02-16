@@ -32,3 +32,4 @@ printf "Installed succesfully! You need to restart your computer to apply the ch
 # https://askubuntu.com/questions/338857/automatically-enter-input-in-command-line
 # https://github.com/ohmyzsh/ohmyzsh
 # https://www.cyberciti.biz/faq/how-to-use-sed-to-find-and-replace-text-in-files-in-linux-unix-shell/
+# https://github.com/Microsoft/vscode/issues/7116
