@@ -9,6 +9,12 @@ printf "Changing theme to agnoster (other themes -> https://github.com/ohmyzsh/o
 sed -i "s/robbyrussell/agnoster/g" ~/.zshrc
 printf "Installing powerline-fonts in order to render themes properly\n"
 sudo apt install fonts-powerline
+# In order to fonts can be applied to pycharm IDE
+git clone https://github.com/powerline/fonts.git --depth=1
+cd fonts
+./install.sh
+cd ..
+rm -rf fonts
 printf "You need to restart your computer now, do you wanna proceed? y/N\n"
 read resp
 if [ "$resp" = "y" ] || [ "$resp" = "yes" ]; then
