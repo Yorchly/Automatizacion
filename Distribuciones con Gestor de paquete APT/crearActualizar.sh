@@ -1,8 +1,7 @@
 #!/bin/bash
+#!/bin/bash
+
 # Script para distribuciones con gestores de paquete APT que crea un fichero con el comando de actualizar y lo pone como herramienta del sistema.
-printf "Creando el fichero actualizar.sh\n"
-> actualizar.sh
-printf "\n"
 printf "Introduciendo en el fichero comandos para actualizar el sistema.\n"
 printf "#\!/bin/bash \n sudo apt update -y \n sudo apt upgrade -y \n sudo apt autoremove -y\n" > actualizar.sh #Para uso interactivo se recomienda mas usar apt que apt-get en las versiones mas recientes de ubuntu.
 printf ""
