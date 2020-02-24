@@ -27,6 +27,7 @@ printf "You need to restart your computer now, do you wanna proceed? y/N\n"
 read resp
 if [ "$resp" = "y" ] || [ "$resp" = "yes" ]; then
     reboot
+fi
 printf "Installed succesfully! You need to restart your computer to apply the changes\n"
 
 # References
