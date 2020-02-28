@@ -1,5 +1,4 @@
 #!/bin/bash
-#!/bin/bash
 
 # Script para distribuciones con gestores de paquete APT que crea un fichero con el comando de actualizar y lo pone como herramienta del sistema.
 printf "Introduciendo en el fichero comandos para actualizar el sistema.\n"
