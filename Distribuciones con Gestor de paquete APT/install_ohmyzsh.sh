@@ -15,6 +15,9 @@ cd fonts
 ./install.sh
 cd ..
 rm -rf fonts
+# Setting zsh as default shell
+chsh -s $(which zsh)
+printf "\n"
 printf "---------------------------------------------------------------------------\n"
 printf "To fix fonts problems in VS Code: \n"
 printf "1) Open editor\n"
@@ -23,6 +26,13 @@ printf "3) In the first section that appears, with the same name you wrote on th
 printf "4) Add line: 'terminal.integrated.fontFamily': 'Source Code Pro for Powerline' in the json\n"
 printf "5) Ready\n"
 printf "---------------------------------------------------------------------------\n"
+printf "\n"
+printf "\n"
+
+printf "There are sometimes that you need to change font in terminal, in Zorin OS 15.2, you need to go to Edit > Preferences > Profile "
+printf "and check 'Custom font'. Then you need to find Menlo for Powerline Bold"
+printf "\n"
+
 printf "You need to restart your computer now, do you wanna proceed? y/N\n"
 read resp
 if [ "$resp" = "y" ] || [ "$resp" = "yes" ]; then
