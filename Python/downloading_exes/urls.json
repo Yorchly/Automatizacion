@@ -1,0 +1,9 @@
+{
+    "urls": {
+        "battlenet": "https://www.battle.net/download/getInstallerForGame?os=win&gameProgram=BATTLENET_APP&version=Live",
+        "epic_games": "https://launcher-public-service-prod06.ol.epicgames.com/launcher/api/installer/download/EpicGamesLauncherInstaller.msi",
+        "gog": "https://webinstallers.gog-statics.com/download/GOG_Galaxy_2.0.exe?payload=2StiF_nMeUSgurs7n8h_NpLDIb7fVVNK2LFbT_gYHwMxhnpiefizKMbmoFA9Mp85r0624tq135TvludoRUX6CriGNXMArf3_UPprbzCVI_vh52IYqRZBhxH5ygTP4RMVSM2AoRvWrMchMiuC0eRxyucMv0zBQsE_dD_lv0dwKpD_YbYTQpDbnfkWd58wCbnINEi5br454F-ZcvUi3x6req7Ymbh3lFvT204bP_IvNsTvBgpB_7bJceermYdgWFwBqzWfan76hjxn9lT32tzcA9v0mebMgqZXc1qbQZaWJONo8xKzZFUW90SpgjyvHGJH1b08oKVXN7PBtBBPs_xiR2U5vmTatjhClPh8z7fDGI5aPw-1I-IBBvnbeQivWMdd4IaVqLnYxhXyEFjw9WKMrdoN4PZG4jU3uD4n8uqjoeXMdurB0k7QGrOyF4Yc0lraq8QMyqi0V9CheTUBjfRapNx6LsqUvDwnpEb07GLJ2RrVbQC5pkdcJ3PiBjozggyump9H8EI9X9hJIMMdlk6yiQYFGHhZntbfWRWe53tcIwHM35qUibNgLG-oPCcWlvcOiqgZ4zfmLs-_AKKwjthOk_t8gnDmXHtVm_J7a9sY",
+        "ubisoft_connect": "https://ubi.li/4vxt9"
+    },
+    "last_update": "16/02/2021 20:17:16"
+}
